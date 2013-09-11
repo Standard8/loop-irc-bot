@@ -1,1 +1,1 @@
-web: bin/hubot --name talkbot -a irc
+app: bin/hubot --name talkbot -a irc
