@@ -1,1 +1,1 @@
-web: bin/hubot -a campfire -n Hubot
+app: bin/hubot --name talkbot -a irc --disable-httpd
