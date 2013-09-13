@@ -7,12 +7,12 @@
 #   hubot time - Reply with current time
 
 TIMEZONE = "US/Pacific"
-STANDUP_TIME_1 = '50 8 * * 2,4-5' # M,W-T 08:50
-STANDUP_TIME_2 = '58 8 * * 2,4-5' # M,W-T 08:58
-MEETING_TIME_1 = '50 7 * * 3' # T 07:50
-MEETING_TIME_2 = '58 7 * * 3' # T 07:57
-RETROSPECTIVE_TIME_1 = '20 7 * * 6' # F 07:20
-RETROSPECTIVE_TIME_2 = '28 7 * * 6' # F 07:28
+STANDUP_TIME_1 = '50 8 * * 1,3-4' # M,W-T 08:50
+STANDUP_TIME_2 = '58 8 * * 1,3-4' # M,W-T 08:58
+MEETING_TIME_1 = '50 7 * * 2' # T 07:50
+MEETING_TIME_2 = '58 7 * * 2' # T 07:57
+RETROSPECTIVE_TIME_1 = '20 7 * * 5' # F 07:20
+RETROSPECTIVE_TIME_2 = '28 7 * * 5' # F 07:28
 ROOM = "#talkilla"
 
 cronJob = require('cron').CronJob
