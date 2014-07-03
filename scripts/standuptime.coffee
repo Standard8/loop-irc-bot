@@ -30,6 +30,7 @@ module.exports = (robot) ->
     ->
       robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: Standup in 2 mins"
       robot.messageRoom ROOM, "http://www.online-stopwatch.com/full-screen-stopwatch/"
+      robot.messageRoom ROOM, "https://etherpad.mozilla.org/haeLwWEkZV"
     null
     true
     TIMEZONE
