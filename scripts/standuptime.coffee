@@ -23,14 +23,14 @@ cronJob = require('cron').CronJob
 module.exports = (robot) ->
   standup1 = new cronJob STANDUP_TIME_1,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: Standup in 10 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: jaws: MattN: Standup in 10 mins"
     null
     true
     TIMEZONE
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: jaws: MattN: Standup in 2 mins"
       robot.messageRoom ROOM, "http://www.online-stopwatch.com/full-screen-stopwatch/"
       robot.messageRoom ROOM, "https://etherpad.mozilla.org/haeLwWEkZV"
     null
@@ -39,14 +39,14 @@ module.exports = (robot) ->
 
   standup2a = new cronJob STANDUP_TIME_2a,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: jaws: MattN: Standup in 2 mins"
     null
     true
     TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: Standup now!"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: andreio: mikedeboer: jaws: MattN: Standup now!"
     null
     true
     TIMEZONE
@@ -66,19 +66,3 @@ module.exports = (robot) ->
     null
     true
     TIMEZONE
-
-#  standup1 = new cronJob RETROSPECTIVE_TIME_1,
-#    ->
-#      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: flo-retina: RT: alexis: Boriss:"
-#      robot.messageRoom ROOM, "Weekly retrospective in 10 mins"
-#    null
-#    true
-#    TIMEZONE
-
-#  standup2 = new cronJob RETROSPECTIVE_TIME_2,
-#    ->
-#      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: flo-retina: RT: alexis: Boriss:"
-#      robot.messageRoom ROOM, "Weekly retrospective in 2 mins, minutes: https://webrtc-apps.etherpad.mozilla.org/20"
-#    null
-#    true
-#    TIMEZONE
