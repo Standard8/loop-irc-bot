@@ -23,14 +23,14 @@ cronJob = require('cron').CronJob
 module.exports = (robot) ->
   standup1 = new cronJob STANDUP_TIME_1,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: Standup in 10 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: gavin: Standup in 10 mins"
     null
     true
     TIMEZONE
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: gavin: Standup in 2 mins"
       robot.messageRoom ROOM, "http://www.online-stopwatch.com/full-screen-stopwatch/"
       robot.messageRoom ROOM, "https://etherpad.mozilla.org/haeLwWEkZV"
     null
@@ -39,14 +39,14 @@ module.exports = (robot) ->
 
   standup2a = new cronJob STANDUP_TIME_2a,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: gavin: Standup in 2 mins"
     null
     true
     TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
-      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: Standup now!"
+      robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: gavin: Standup now!"
     null
     true
     TIMEZONE
