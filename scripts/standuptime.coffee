@@ -31,7 +31,6 @@ module.exports = (robot) ->
   standup2 = new cronJob STANDUP_TIME_2,
     ->
       robot.messageRoom ROOM, "Standard8: NiKo`: tOkeshu: dmose: mreavy: shell: mikedeboer: jaws: MattN: gavin: Standup in 2 mins"
-      robot.messageRoom ROOM, "http://www.online-stopwatch.com/full-screen-stopwatch/"
       robot.messageRoom ROOM, "https://etherpad.mozilla.org/haeLwWEkZV"
     null
     true
