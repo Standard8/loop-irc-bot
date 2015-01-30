@@ -1,1 +1,1 @@
-app: bin/hubot --name loopbot -a irc
+web: bin/hubot -a irc -n loopbot
