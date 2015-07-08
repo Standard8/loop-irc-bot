@@ -22,14 +22,14 @@ cronJob = require('cron').CronJob
 module.exports = (robot) ->
   standup1 = new cronJob STANDUP_TIME_1,
     ->
-      robot.messageRoom ROOM, "Standard8: tOkeshu: dmose: mreavy: shell: mikedeboer: Standup in 10 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: mreavy: shell: mikedeboer: frsela: mai: Standup in 10 mins"
     null
     true
     TIMEZONE
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
-      robot.messageRoom ROOM, "Standard8: tOkeshu: dmose: mreavy: shell: mikedeboer: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: mreavy: shell: mikedeboer: frsela: mai: Standup in 2 mins"
       robot.messageRoom ROOM, "https://etherpad.mozilla.org/haeLwWEkZV"
     null
     true
@@ -37,14 +37,14 @@ module.exports = (robot) ->
 
   standup2a = new cronJob STANDUP_TIME_2a,
     ->
-      robot.messageRoom ROOM, "Standard8: tOkeshu: dmose: mreavy: shell: mikedeboer: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: mreavy: shell: mikedeboer: frsela: mai: Standup in 2 mins"
     null
     true
     TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
-      robot.messageRoom ROOM, "Standard8: tOkeshu: dmose: mreavy: shell: mikedeboer: Standup now!"
+      robot.messageRoom ROOM, "Standard8: dmose: mreavy: shell: mikedeboer: frsela: mai: Standup now!"
     null
     true
     TIMEZONE
