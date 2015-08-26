@@ -8,7 +8,7 @@
     "hubot": "^2.11.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.1.1",
-    "hubot-heroku-keepalive": "0.0.4",
+    "hubot-heroku-keepalive": "1.0.0",
     "hubot-irc": "^0.2.7",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
