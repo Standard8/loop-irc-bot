@@ -8,10 +8,12 @@
 
 TIMEZONE = "US/Pacific"
 # On fridays pretend it is standup
-STANDUP_TIME_1 = '50 7 * * 1,2,3,4,5' # M,T,W,Th,F 07:50
+STANDUP_TIME_1 = '50 7 * * 1,2,3,4' # M,T,W,Th 07:50
 STANDUP_TIME_2 = '58 7 * * 1,2,3,4' # M,T,W,Th 07:58
-STANDUP_TIME_2a = '58 7 * * 5' # F 07:58
-STANDUP_TIME_3 = '00 8 * * 1,2,3,4,5' # M,T,W,Th,F 08:00
+STANDUP_TIME_3 = '00 8 * * 1,2,3,4' # M,T,W,Th 08:00
+STANDUP_TIME_1F = '20 7 * * 5' # F 07:20
+STANDUP_TIME_2F = '28 7 * * 5' # F 07:28
+STANDUP_TIME_3F = '30 7 * * 5' # F 07:30
 
 #MEETING_TIME_1 = '50 7 * * 2' # T 07:50
 #MEETING_TIME_2 = '58 7 * * 2' # T 07:58
@@ -27,6 +29,13 @@ module.exports = (robot) ->
     true
     TIMEZONE
 
+  standup1F = new cronJob STANDUP_TIME_1F,
+    ->
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: frsela: mai: dcritch: crafuse: Standup in 10 mins"
+    null
+    true
+    TIMEZONE
+
   standup2 = new cronJob STANDUP_TIME_2,
     ->
       robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: frsela: mai: dcritch: crafuse: Standup in 2 mins"
@@ -35,7 +44,7 @@ module.exports = (robot) ->
     true
     TIMEZONE
 
-  standup2a = new cronJob STANDUP_TIME_2a,
+  standup2F = new cronJob STANDUP_TIME_2F,
     ->
       robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: frsela: mai: dcritch: crafuse: Standup in 2 mins"
     null
@@ -43,6 +52,13 @@ module.exports = (robot) ->
     TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
+    ->
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: frsela: mai: dcritch: crafuse: Standup now!"
+    null
+    true
+    TIMEZONE
+
+  standup3F = new cronJob STANDUP_TIME_3F,
     ->
       robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: frsela: mai: dcritch: crafuse: Standup now!"
     null
