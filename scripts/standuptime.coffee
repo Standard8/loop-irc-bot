@@ -24,21 +24,21 @@ cronJob = require('cron').CronJob
 module.exports = (robot) ->
   standup1 = new cronJob STANDUP_TIME_1,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup in 10 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup in 10 mins"
     null
     true
     TIMEZONE
 
   standup1F = new cronJob STANDUP_TIME_1F,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup in 10 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup in 10 mins"
     null
     true
     TIMEZONE
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup in 2 mins"
       robot.messageRoom ROOM, "https://docs.google.com/document/d/1zTRjghpxL_znjE8BJTiZgOsYUuUrtkpYsajodeT9aiA/edit"
     null
     true
@@ -46,21 +46,21 @@ module.exports = (robot) ->
 
   standup2F = new cronJob STANDUP_TIME_2F,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup in 2 mins"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup in 2 mins"
     null
     true
     TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup now!"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup now!"
     null
     true
     TIMEZONE
 
   standup3F = new cronJob STANDUP_TIME_3F,
     ->
-      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: Standup now!"
+      robot.messageRoom ROOM, "Standard8: dmose: abr: shell: mikedeboer: andrei: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: Standup now!"
     null
     true
     TIMEZONE
