@@ -8,7 +8,10 @@
 #   None
 #
 # Commands:
-#   beer - replies with random beer quote
+#   standup - Give information about standup
+#   loop wiki - Give the loop wiki page
+#   invite standup - How to add more people to the standup
+#   repo, repository - What's my repository?
 #
 # Author:
 #   bhankus
@@ -24,4 +27,7 @@ module.exports = (robot) ->
     msg.send "Please create a pull request to https://github.com/Standard8/loop-irc-bot"
 
   robot.respond /repository/i, (msg) ->
+    msg.send "My repository is https://github.com/Standard8/loop-irc-bot"
+
+  robot.respond /repo/i, (msg) ->
     msg.send "My repository is https://github.com/Standard8/loop-irc-bot"
