@@ -55,19 +55,19 @@ getMeetingInfo = (d) ->
     randomMessage = RANDOM_STANDUP_MESSAGES[ Math.floor(Math.random() * RANDOM_STANDUP_MESSAGES.length) ]
     [randomMessage, "https://docs.google.com/document/d/1zTRjghpxL_znjE8BJTiZgOsYUuUrtkpYsajodeT9aiA/edit"]
 
-messageRoomWithTime = (robot, people, date, howLong) ->
+messageRoomWithTime = (robot, people, date, howLong, includeExtra) ->
   info = getMeetingInfo(date)
   robot.messageRoom ROOM, people + " " + info[0] + " " + howLong
-  if info.length > 1
+  if includeExtra and info.length > 1
     robot.messageRoom ROOM, info[1]
 
 module.exports = (robot) ->
   robot.hear /teststanduptime/i, (msg) ->
-    msg.send messageRoomWithTime(robot, "<fake people>", new Date, "in test mins!")
+    msg.send messageRoomWithTime(robot, "<fake people>", new Date, "in test mins!", true)
 
   standup1 = new cronJob STANDUP_TIME_1,
     ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 10 mins")
+      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 10 mins", true)
     null
     true
     TIMEZONE
@@ -81,7 +81,7 @@ module.exports = (robot) ->
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 2 mins")
+      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 2 mins", false)
     null
     true
     TIMEZONE
@@ -95,7 +95,7 @@ module.exports = (robot) ->
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "now!")
+      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "now!", false)
     null
     true
     TIMEZONE
