@@ -65,44 +65,44 @@ module.exports = (robot) ->
   robot.hear /teststanduptime/i, (msg) ->
     msg.send messageRoomWithTime(robot, "<fake people>", new Date, "in test mins!", true)
 
-  standup1 = new cronJob STANDUP_TIME_1,
-    ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 10 mins", true)
-    null
-    true
-    TIMEZONE
+#  standup1 = new cronJob STANDUP_TIME_1,
+#    ->
+#      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 10 mins", true)
+#    null
+#    true
+#    TIMEZONE
 
-  standup1F = new cronJob STANDUP_TIME_1F,
-    ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 10 mins"
-    null
-    true
-    TIMEZONE
+#  standup1F = new cronJob STANDUP_TIME_1F,
+#    ->
+#      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 10 mins"
+#    null
+#    true
+#    TIMEZONE
 
-  standup2 = new cronJob STANDUP_TIME_2,
-    ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 2 mins", false)
-    null
-    true
-    TIMEZONE
+#  standup2 = new cronJob STANDUP_TIME_2,
+#    ->
+#      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "in 2 mins", false)
+#    null
+#    true
+#    TIMEZONE
 
-  standup2F = new cronJob STANDUP_TIME_2F,
-    ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 2 mins"
-    null
-    true
-    TIMEZONE
+#  standup2F = new cronJob STANDUP_TIME_2F,
+#    ->
+#      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 2 mins"
+#    null
+#    true
+#    TIMEZONE
 
-  standup3 = new cronJob STANDUP_TIME_3,
-    ->
-      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "now!", false)
-    null
-    true
-    TIMEZONE
+#  standup3 = new cronJob STANDUP_TIME_3,
+#    ->
+#      messageRoomWithTime(robot, DEFAULT_PEOPLE, new Date, "now!", false)
+#    null
+#    true
+#    TIMEZONE
 
-  standup3F = new cronJob STANDUP_TIME_3F,
-    ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup now!"
-    null
-    true
-    TIMEZONE
+#  standup3F = new cronJob STANDUP_TIME_3F,
+#    ->
+#      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup now!"
+#    null
+#    true
+#    TIMEZONE
