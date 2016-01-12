@@ -5,15 +5,15 @@
   "author": "Mark Banner <standard8@mozilla.com>",
   "description": "Loop's mad bot",
   "dependencies": {
-    "hubot": "^2.11.0",
+    "hubot": "2.11.0",
     "hubot-diagnostics": "0.0.1",
-    "hubot-help": "^0.1.1",
-    "hubot-heroku-keepalive": "1.0.0",
-    "hubot-irc": "^0.2.7",
-    "hubot-rules": "^0.1.0",
-    "hubot-scripts": "^2.5.16",
-    "hubot-shipit": "^0.2.0",
-    "cron": "1.0.*",
+    "hubot-help": "0.1.1",
+    "hubot-heroku-keepalive": "1.0.2",
+    "hubot-irc": "0.2.7",
+    "hubot-rules": "0.1.0",
+    "hubot-scripts": "2.5.16",
+    "hubot-shipit": "0.2.0",
+    "cron": "1.1.0",
     "time": "*"
   },
   "engines": {
