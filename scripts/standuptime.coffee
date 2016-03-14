@@ -47,9 +47,9 @@ getWeekNumber = (d) ->
 getMeetingInfo = (d) ->
   weekNo = getWeekNumber(d)
 
-  if weekNo % 2 == 0 and d.getDay() == 2
+  if weekNo % 2 == 1 and d.getDay() == 2
     ["Firefox Desktop meeting", "https://wiki.mozilla.org/Firefox/Meeting"]
-  else if weekNo % 2 == 1 and d.getDay() == 1
+  else if weekNo % 2 == 0 and d.getDay() == 1
     ["Planning meeting"]
   else
     randomMessage = RANDOM_STANDUP_MESSAGES[ Math.floor(Math.random() * RANDOM_STANDUP_MESSAGES.length) ]
