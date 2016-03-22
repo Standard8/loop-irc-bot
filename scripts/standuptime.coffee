@@ -14,7 +14,7 @@ STANDUP_TIME_3F = '30 7 * * 5' # F 07:30
 
 ROOM = "#loop"
 
-DEFAULT_PEOPLE = "Standard8: dmose: mikedeboer: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking:"
+DEFAULT_PEOPLE = "Standard8: dmose: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: fzzzy:"
 
 RANDOM_STANDUP_MESSAGES = [
   "Standup", "Standup", "Standup", "Standup", "Standup",
