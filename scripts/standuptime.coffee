@@ -14,7 +14,7 @@ STANDUP_TIME_3F = '30 7 * * 5' # F 07:30
 
 ROOM = "#loop"
 
-DEFAULT_PEOPLE = "Standard8: dmose: fcampo: Mardak: mancas: dcritch: crafuse: ianbicking: fzzzy:"
+DEFAULT_PEOPLE = "/cc Standard8, dmose, fcampo, Mardak, mancas, dcritch, crafuse, ianbicking, fzzzy"
 
 RANDOM_STANDUP_MESSAGES = [
   "Standup", "Standup", "Standup", "Standup", "Standup",
@@ -57,7 +57,7 @@ getMeetingInfo = (d) ->
 
 messageRoomWithTime = (robot, people, date, howLong, includeExtra) ->
   info = getMeetingInfo(date)
-  robot.messageRoom ROOM, people + " " + info[0] + " " + howLong
+  robot.messageRoom ROOM, info[0] + " " + howLong + " " + people
   if includeExtra and info.length > 1
     robot.messageRoom ROOM, info[1]
 
