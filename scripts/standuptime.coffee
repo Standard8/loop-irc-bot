@@ -74,7 +74,7 @@ module.exports = (robot) ->
 
   standup1F = new cronJob STANDUP_TIME_1F,
     ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 10 mins"
+      robot.messageRoom ROOM, "Standup in 10 mins " + DEFAULT_PEOPLE
     null
     true
     TIMEZONE
@@ -88,7 +88,7 @@ module.exports = (robot) ->
 
   standup2F = new cronJob STANDUP_TIME_2F,
     ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup in 2 mins"
+      robot.messageRoom ROOM, "Standup in 2 mins " + DEFAULT_PEOPLE
     null
     true
     TIMEZONE
@@ -102,7 +102,7 @@ module.exports = (robot) ->
 
   standup3F = new cronJob STANDUP_TIME_3F,
     ->
-      robot.messageRoom ROOM, DEFAULT_PEOPLE + " Standup now!"
+      robot.messageRoom ROOM, "Standup now! " + DEFAULT_PEOPLE
     null
     true
     TIMEZONE
