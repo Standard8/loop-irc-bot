@@ -1,6 +1,6 @@
 {
   "name": "loopbot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": "Mark Banner <standard8@mozilla.com>",
   "description": "Loop's mad bot",
@@ -17,6 +17,6 @@
     "time": "*"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "4.4.x"
   }
 }
