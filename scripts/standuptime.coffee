@@ -14,7 +14,7 @@ STANDUP_TIME_3F = '30 7 * * 5' # F 07:30
 
 ROOM = "#loop"
 
-DEFAULT_PEOPLE = "/cc Standard8, dmose, fcampo, Mardak, mancas, dcritch, crafuse, ianbicking, fzzzy, andreio"
+DEFAULT_PEOPLE = "/cc Standard8, dmose, Mardak, dcritch, crafuse, ianbicking, fzzzy, andreio"
 
 RANDOM_STANDUP_MESSAGES = [
   "Standup", "Standup", "Standup", "Standup", "Standup",
@@ -49,8 +49,8 @@ getMeetingInfo = (d) ->
 
   if weekNo % 2 == 1 and d.getDay() == 2
     ["Firefox Desktop meeting", "https://wiki.mozilla.org/Firefox/Meeting"]
-  else if weekNo % 2 == 0 and d.getDay() == 1
-    ["Planning meeting"]
+  # else if weekNo % 2 == 0 and d.getDay() == 1
+  #  ["Planning meeting"]
   else
     randomMessage = RANDOM_STANDUP_MESSAGES[ Math.floor(Math.random() * RANDOM_STANDUP_MESSAGES.length) ]
     [randomMessage, "https://docs.google.com/document/d/1zTRjghpxL_znjE8BJTiZgOsYUuUrtkpYsajodeT9aiA/edit"]
@@ -72,12 +72,12 @@ module.exports = (robot) ->
     true
     TIMEZONE
 
-  standup1F = new cronJob STANDUP_TIME_1F,
-    ->
-      robot.messageRoom ROOM, "Standup in 10 mins " + DEFAULT_PEOPLE
-    null
-    true
-    TIMEZONE
+  #standup1F = new cronJob STANDUP_TIME_1F,
+  #  ->
+  #    robot.messageRoom ROOM, "Standup in 10 mins " + DEFAULT_PEOPLE
+  #  null
+  #  true
+  #  TIMEZONE
 
   standup2 = new cronJob STANDUP_TIME_2,
     ->
@@ -86,12 +86,12 @@ module.exports = (robot) ->
     true
     TIMEZONE
 
-  standup2F = new cronJob STANDUP_TIME_2F,
-    ->
-      robot.messageRoom ROOM, "Standup in 2 mins " + DEFAULT_PEOPLE
-    null
-    true
-    TIMEZONE
+  #standup2F = new cronJob STANDUP_TIME_2F,
+  #  ->
+  #    robot.messageRoom ROOM, "Standup in 2 mins " + DEFAULT_PEOPLE
+  #  null
+  #  true
+  #  TIMEZONE
 
   standup3 = new cronJob STANDUP_TIME_3,
     ->
@@ -100,9 +100,9 @@ module.exports = (robot) ->
     true
     TIMEZONE
 
-  standup3F = new cronJob STANDUP_TIME_3F,
-    ->
-      robot.messageRoom ROOM, "Standup now! " + DEFAULT_PEOPLE
-    null
-    true
-    TIMEZONE
+  #standup3F = new cronJob STANDUP_TIME_3F,
+  #  ->
+  #    robot.messageRoom ROOM, "Standup now! " + DEFAULT_PEOPLE
+  #  null
+  #  true
+  #  TIMEZONE
